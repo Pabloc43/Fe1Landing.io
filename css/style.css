@@ -1,0 +1,174 @@
+/*Formateando*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+/*Estilos sobre selectores*/
+body{
+    font-size: 16px;
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffff;
+    width: 100%;
+}
+
+.numeroSeccion2,
+button{
+    color: #000;
+    background-color: #F3603B;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #ffff;
+    -webkit-box-shadow: -1px 17px 26px -5px rgba(0,0,0,0.32);
+    -moz-box-shadow: -1px 17px 26px -5px rgba(0,0,0,0.32);
+    box-shadow: -1px 17px 26px -5px rgba(255, 51, 0, 0.5);
+    transform: scale(1.05);
+}
+.navH ul{
+    flex-wrap: wrap;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones-nav{
+    width: 45vw;
+}
+
+.botones-nav li a{
+    text-decoration: none;
+    color: rgb(35, 44, 81);
+    font-weight: 500;
+    padding: 8px;
+    transition: .4s;
+}
+
+.botones-nav li a:hover{
+    color: rgb(143, 148, 167);
+
+}
+
+h1{
+    font-size: 58px;
+}
+
+
+/*Seccion intro*/
+.intro{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    min-height: 70vh;
+}
+
+.parrafo{
+    width: 353px;
+    margin: 15px 0 40px 0;
+    color: rgb(112, 116, 129);
+    font-weight: 400;
+}
+
+.imagen{
+    width: 35vw;
+    min-width: 400px;
+}
+
+.intro div{
+    width: 32vw;
+    min-width: 400px;
+}
+
+
+.nav-mobile{
+    display: none;
+}
+
+
+
+/*Seccion textos*/
+
+.about-padre{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.about-div1,
+.about-div2{
+    width: 35vw;
+    min-width: 400px;
+}
+
+
+.h3-about{
+    font-size: 36px;
+}
+
+.lista li{
+    display: flex;
+}
+
+.numeroSeccion2{
+    cursor: default;
+    height: 40px;
+    color: #ffff;
+    margin-right: 60px;
+}
+
+.lista li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista li div h4{
+    color: rgb(35, 44, 81);
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+/*Seccion Cards*/
+.cartas{
+    display: flex;
+    justify-content: center;
+}
+/*Pie de pagina*/
+@media screen and (max-width: 576px) {
+    .nav-mobile{
+        display: block;
+    }
+    .nav-desktop{
+        display: none;
+    }
+    *{
+        text-align: center;
+    }
+}
